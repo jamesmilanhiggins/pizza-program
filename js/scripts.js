@@ -83,7 +83,7 @@ $(document).ready(function() {
       var toppingInput = $(this).val();
       newPizza.toppings.push(toppingsInput);
     });
-    $("#hidden").append("<li>" +'Hi ' + nameInput + '. The cost of your pizza is $' + newPizza.alterPrice() + "</li>");
+    $("#hidden").append("<li>" +'Hi ' + nameInput + '. The cost of your pizza will be $' + newPizza.alterPrice() + "</li>");
     console.log(newPizza);
     newPizza.alterPrice();
 

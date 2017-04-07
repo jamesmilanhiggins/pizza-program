@@ -1,3 +1,23 @@
 .container {
-  background-color: lightgrey;
+  background-color: #EAF27C;
+}
+.jumbotron {
+  background-color: #DBA98E;
+  text-align: center;
+  color: #832232;
+}
+body {
+ margin: 0;
+ background-image: url("http://vffranchiseconsulting.com/wp-content/uploads/2016/03/grimaldis-home.jpg");
+ background-size: 1440px 800px;
+ background-repeat:no-repeat;
+ /*display: compact;
+ font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+ }
+.container {
+  margin-bottom: 10px;
+}
+#show-section {
+  font-size: 15px;
+  text-decoration: underline;
 }

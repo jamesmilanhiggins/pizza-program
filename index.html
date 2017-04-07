@@ -18,39 +18,39 @@
         <form id="order-form">
           <div class="form-group">
           <label for="name">Enter Your Name Here:</label>
-          <input type="text" name="name">
+          <input type="text" name="name" placeholder="type your name here">
         </div>
           <div class="form-group">
             <label for="size">What Size Pizza Would You Like?</label>
             <select id="pizza-size">
-             <option value="small">Small</option>
-             <option value="medium">Medium</option>
-             <option value="large">Large</option>
-             <option value="xl">Extra-Large</option>
+             <option value="small">Small ($6)</option>
+             <option value="medium">Medium ($8)</option>
+             <option value="large">Large ($10)</option>
+             <option value="xl">Extra-Large ($12)</option>
            </select>
           </div>
           <div class="form-group">
-            <label for="toppings">What Toppings Would You Like On Your Pizza?</label><br>
+            <label for="toppings">What Toppings Would You Like On Your Pizza? (toppings are $1 a piece. The 5th topping is free)</label><br>
             <input type="checkbox" name="topping" value="cheese"> Cheese<br>
             <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
             <input type="checkbox" name="topping" value="sausage">Sausage<br>
-            <input type="checkbox" name="topping" value="artichoke">Artichoke<br>
-            <input type="checkbox" name="topping" value="anchovy">Anchovy<br>
+            <input type="checkbox" name="topping" value="bacon">Bacon<br>
+            <input type="checkbox" name="topping" value="pineapple">Pineapple<br>
           </div>
           <button type="button" name="submit-button">Submit Order!</button>
         </form>
       </div>
       <div class="col-md-6">
         <div id="hidden">
-          <p>This section shows the items on the pizza, along with the price</p>
+          <p><span id="show-section">Below is your pizza order.</span></p>
           <ul>
 
           </ul>
         </div>
       </div>
     </div>
-    <div id="work-responses">
+    <!-- <div id="work-responses">
       <h1> this is a test section<h1>
-    </div>
+    </div> -->
   </body>
 </html>
