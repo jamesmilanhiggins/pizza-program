@@ -4,7 +4,7 @@
 function Pizza(name, size, topping, price) {
   this.name = name;
   this.size = size;
-  this.topping = topping;
+  this.topping = [];
   // this.topping = [cheese, peperoni, sausage];
   this.price = 0;
   // this.topping = topping;
@@ -26,8 +26,17 @@ Pizza.prototype.alterPrice = function() {
     else if (this.size === "xl") {
       this.price += 12;
     }
-    if ((this.topping === "cheese")) {
+    if ((this.topping.length === 1)) {
       this.price += 1;
+    }
+    else if (this.topping.length === 2) {
+      this.price +=2;
+    }
+    else if (this.topping.length === 3) {
+      this.price +=3;
+    }
+    else if (this.topping.length === 4) {
+      this.price +=5;
     }
     return this.price;
   }
