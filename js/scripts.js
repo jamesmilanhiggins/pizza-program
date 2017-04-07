@@ -8,35 +8,65 @@ function Pizza(name, size, toppings, price) {
   this.price = 0;
 }
 Pizza.prototype.alterPrice = function() {
-  if ((this.size === "small") && (this.toppings.length <= 5)) {
-    this.price += 6000;
+  if ((this.size === "small") && (this.toppings.length === 0)) {
+    this.price += 6;
   }
-    else if (this.size === "medium") {
+    else if ((this.size === "small") && (this.toppings.length === 1)) {
+      this.price += 7;
+    }
+    else if ((this.size === "small") && (this.toppings.length === 2)) {
       this.price += 8;
     }
-    else if (this.size === "large") {
+    else if ((this.size === "small") && (this.toppings.length === 3)) {
+      this.price += 9;
+    }
+    else if ((this.size === "small") && (this.toppings.length >= 4)) {
       this.price += 10;
     }
-    else if (this.size === "xl") {
+    else if ((this.size === "medium") && (this.toppings.length === 0)) {
+      this.price += 8;
+    }
+    else if ((this.size === "medium") && (this.toppings.length === 1)) {
+      this.price += 9;
+    }
+    else if ((this.size === "medium") && (this.toppings.length === 2)) {
+      this.price += 10;
+    }
+    else if ((this.size === "medium") && (this.toppings.length === 3)) {
+      this.price += 11;
+    }
+    else if ((this.size === "medium") && (this.toppings.length >= 4)) {
       this.price += 12;
     }
-    else if((this.toppings.length === 1)) {
-      this.price += 1;
+    else if ((this.size === "large") && (this.toppings.length === 0)) {
+      this.price += 10;
     }
-    else if (this.toppings.length === 2) {
-      this.price +=2;
+    else if ((this.size === "large") && (this.toppings.length === 1)) {
+      this.price += 11;
     }
-    else if (this.toppings.length === 3) {
-      this.price +=3;
+    else if ((this.size === "large") && (this.toppings.length === 2)) {
+      this.price += 12;
     }
-    else if (this.toppings.length === 4) {
-      this.price +=4;
+    else if ((this.size === "large") && (this.toppings.length === 3)) {
+      this.price += 13;
     }
-    else if (this.toppings.length === 5) {
-      this.price +=5;
+    else if ((this.size === "large") && (this.toppings.length >= 4)) {
+      this.price += 14;
     }
-    else if (this.toppings.length === 6) {
-      this.price +=6;
+    else if ((this.size === "xl") && (this.toppings.length === 0)) {
+      this.price += 12;
+    }
+    else if ((this.size === "xl") && (this.toppings.length === 1)) {
+      this.price += 13;
+    }
+    else if ((this.size === "xl") && (this.toppings.length === 2)) {
+      this.price += 14;
+    }
+    else if ((this.size === "xl") && (this.toppings.length === 3)) {
+      this.price += 15;
+    }
+    else if ((this.size === "xl") && (this.toppings.length >= 4)) {
+      this.price += 16;
     }
     return this.price;
   }
