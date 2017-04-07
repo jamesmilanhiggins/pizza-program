@@ -1,36 +1,47 @@
 /////////////////
 //Back-End Logic
 /////////////////
-
-
-function Pizza (size, toppings) {
-  this.age = [medium, large, xl];
-  this.time = [cheese, pepperoni, sausage];
+function Pizza(name, size, topping, price) {
+  this.name = name;
+  this.size = size;
+  this.topping = topping;
+  this.price = 0;
+  // this.size = [medium, large, xl];
+  // this.size = [1, 2, 3];
+  // this.topping = [cheese, pepperoni, sausage];
 }
 
-// Ticket.prototype.alterPrice = function() {
-//   if ((this.age < 12) || (this.age >= 65)) {
-//     this.price += 0
-//   }
-//   else {
-//     this.price += 2
-//
-//   return this.price;
-// }
-
-
-
-
+Pizza.prototype.alterPrice = function() {
+  if ((this.size === "medium")) {
+    this.price += 8;
+  }
+  else if (this.size === "large") {
+    this.price += 10;
+  }
+  else if (this.size === "xl") {
+    this.price += 12;
+  }
+  return this.price;
+}
 //////////////////
 //Front-End Logic
 //////////////////
-alert("test");
 $(document).ready(function() {
    $("button[name=submit-button]").click(function(){
-    var name =  $("input[name=name]").val();
-    console.log(name);
-  
-    var pizzaSize = $("#pizza-size").val();
-    var pizzaSize = $("#pizza-size").val();
+    var nameInput =  $("input[name=name]").val();
+    var pizzaSizeInput = $("#pizza-size").val();
+    var newPizza = new Pizza(nameInput, pizzaSizeInput);
+    console.log(newPizza);
+    $("#hidden").append("<li>" + newPizza.alterPrice() + "</li>");
+    newPizza.alterPrice();
+
+  //  $("input:checkbox[name=topping]:checked").each(function (){
+  //    var toppingsInput = $(this).val();
+  //  });
+  //  var name = new Pizza(nameInput);
+  //  var size = new Pizza(pizzaSizeInput);
+  //  var topping = new Pizza(toppingsInput);
+  // console.log(this.price);
+  //  newPizza.price();
   });
 });
