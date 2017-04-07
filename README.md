@@ -15,20 +15,20 @@ April 7th 2017
 ## Specifications
 
 *  This program will allow users to enter their name and click order
-  * **Example Input**:James
-  * **Example Output**:"alert James"
+    * **Example Input**:James
+    * **Example Output**:James
 
 *  This program will allow users to select different sized pizzas
-  * **Example Input**: select size
-  * **Example Output**:small, medium, large, extra or extra large
+    * **Example Input**: select size
+    * **Example Output**: small, medium, large, extra or extra large
 
 *  This program will change the price of the pizza depending on the size selected
     * **Example Input**: select medium, large
     * **Example Output**:$8, $10
 
 *  This program will allow users to select 1 topping and change the price
-  * **Example Input**: select cheese
-  * **Example Output**:price increase by $1
+    * **Example Input**: select cheese
+    * **Example Output**:price increase by $1
 
 *  This program will change the price of the pizza depending on the number of toppings selected
     * **Example Input**: 3 toppings
