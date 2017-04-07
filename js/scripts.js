@@ -89,7 +89,6 @@ $(document).ready(function() {
     });
 
     $("#hidden").append("<li>" +'Hi ' + nameInput + '. The cost of your pizza will be $' + newPizza.alterPrice() + "</li>");
-    console.log(newPizza);
     newPizza.alterPrice();
   });
 });
