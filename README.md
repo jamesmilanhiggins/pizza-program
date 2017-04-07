@@ -1,38 +1,34 @@
 # Pizza Program
 
-#### This program lets users choose one or more toppings and a size and can order the pizza
+#### This program lets users choose a size and toppings for a pizza.
 
 #### By James Higgins
 
 ## Description
 
-This program lets users choose toppings, and choose a size and lets the user see a price based on the two variables.
+This program lets users choose toppings, and choose a size and lets the user see a price for their custom pizza.
 
 April 7th 2017
 
-[Link to live site]
+[Link to live site](https://jamesmilanhiggins.github.io/pizza-program/)
 
 ## Specifications
 
 *  This program will allow users to enter their name and click order
   * **Example Input**:James
-  * **Example Output**:"alert james"
+  * **Example Output**:"alert James"
 
 *  This program will allow users to select different sized pizzas
   * **Example Input**: select size
   * **Example Output**:small, medium, large, extra or extra large
 
 *  This program will change the price of the pizza depending on the size selected
-    * **Example Input**: select medium
-    * **Example Output**:$8
+    * **Example Input**: select medium, large
+    * **Example Output**:$8, $10
 
 *  This program will allow users to select 1 topping and change the price
   * **Example Input**: select cheese
   * **Example Output**:price increase by $1
-
-*  This program will allow users to select multiple toppings and change the price based off of how many they have
-  * **Example Input**: select 3
-  * **Example Output**:price increase $3
 
 *  This program will change the price of the pizza depending on the number of toppings selected
     * **Example Input**: 3 toppings
