@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <div class="jumbotron">
-        <h1>Customize A Pizza</h1>
+        <h1>James' World Famous Pizza</h1>
       </div>
       <div class="col-md-6">
         <form id="order-form">
@@ -23,6 +23,7 @@
           <div class="form-group">
             <label for="size">What Size Pizza Would You Like?</label>
             <select id="pizza-size">
+             <option value="small">Small</option>
              <option value="medium">Medium</option>
              <option value="large">Large</option>
              <option value="xl">Extra-Large</option>
@@ -31,8 +32,8 @@
           <div class="form-group">
             <label for="toppings">What Toppings Would You Like On Your Pizza?</label><br>
             <input type="checkbox" name="topping" value="cheese"> Cheese<br>
-            <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
-            <input type="checkbox" name="topping" value="sausage">Sausage<br>
+            <!-- <input type="checkbox" name="topping" value="pepperoni">Pepperoni<br>
+            <input type="checkbox" name="topping" value="sausage">Sausage<br> -->
           </div>
           <button type="button" name="submit-button">Submit Order!</button>
         </form>
