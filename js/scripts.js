@@ -1,12 +1,14 @@
 /////////////////
 //Back-End Logic
 /////////////////
+
 function Pizza(name, size, toppings, price) {
   this.name = name;
   this.size = size;
   this.toppings = [];
   this.price = 0;
 }
+
 Pizza.prototype.alterPrice = function() {
   if ((this.size === "small") && (this.toppings.length === 0)) {
     this.price += 6;
@@ -70,9 +72,11 @@ Pizza.prototype.alterPrice = function() {
     }
     return this.price;
   }
+
 //////////////////
 //Front-End Logic
 //////////////////
+
 $(document).ready(function() {
    $("button[name=submit-button]").click(function(){
     var nameInput =  $("input[name=name]").val();
@@ -83,9 +87,9 @@ $(document).ready(function() {
       var toppingInput = $(this).val();
       newPizza.toppings.push(toppingsInput);
     });
+
     $("#hidden").append("<li>" +'Hi ' + nameInput + '. The cost of your pizza will be $' + newPizza.alterPrice() + "</li>");
     console.log(newPizza);
     newPizza.alterPrice();
-
   });
 });
