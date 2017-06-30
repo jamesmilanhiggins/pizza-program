@@ -4,13 +4,15 @@
 
 #### By James Higgins
 
+Visit live site [here](https://jamesmilanhiggins.github.io/pizza-program/)
+
 ## Description
 
 This program lets users choose toppings, and choose a size and lets the user see a price for their custom pizza.
 
 April 7th 2017
 
-[Link to live site](https://jamesmilanhiggins.github.io/pizza-program/)
+
 
 ## Specifications
 
